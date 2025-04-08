@@ -1,0 +1,93 @@
+/* variable de colores y radio de bordes*/
+:root{
+    --primary:#E5C4FF;
+    --radio-borde: 0.5rem;
+    --secundaryLight:#EEA6A7;
+    --box-shadow:#CA91FB;
+}
+img{
+    width: 130px;
+
+}
+/* barra de navegacion */
+.barra-de-navegacion{
+    background: var(--primary);
+    box-shadow: white;
+    background-image: linear-gradient(white, var(--primary));
+   
+   
+   display: flex;
+   /* flex-direction: column; */
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+ /* enlaces barra de navegacion */
+.navegacion a{
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5;
+  
+
+    /* color de letra  */
+    color: rgb(16, 15, 15);
+}
+/* cuando paza el raton por las letras */
+.navegacion a:hover{
+    background-image: linear-gradient(white, var(--primary));
+
+     border-radius: 10px;
+}
+.portada{
+    background-repeat: no-repeat;
+    background-size: cover;
+  height: 500px;
+    width: 100%;
+}
+button{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(white, var(--primary));
+    padding: 1rem, 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+   
+    border-radius: var(--radio-borde);
+    width: 100%;
+
+    text-align: center;
+    color: black;
+    justify-content: space-around;
+    
+
+    
+}
+
+.container{
+    background-image: url(../img/globos.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: #441f64;
+}
+h1{
+   color: #070707;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    text-align: center;
+}
+p{
+    font-size: 3rem;
+}
+
+
+
+
+
