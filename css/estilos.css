@@ -17,7 +17,7 @@ img{
    
    
    display: flex;
-   /* flex-direction: column; */
+
    justify-content: space-between;
    align-items: center;
    
@@ -28,7 +28,7 @@ img{
     padding: 1rem;
     text-decoration: none;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.5;
   
 
@@ -39,7 +39,7 @@ img{
 .navegacion a:hover{
     background-image: linear-gradient(white, var(--primary));
 
-     border-radius: 10px;
+     border-radius: 5px;
 }
 .portada{
     background-repeat: no-repeat;
@@ -57,6 +57,7 @@ button{
    
     border-radius: var(--radio-borde);
     width: 100%;
+    max-width: 450px;
 
     text-align: center;
     color: black;
@@ -77,13 +78,13 @@ button{
     background-position: center;
     box-shadow: #441f64;
 }
-h1{
-   color: #070707;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 4rem;
-    text-align: center;
-}
-p{
+.container h1{
+    color: #441f64;
+    font-weight: bold;
+   text-align: center;
+   justify-content: center;
+   text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
     text-align: center;
 }
@@ -98,21 +99,150 @@ p{
     width: 100%;
     max-width: 450px;
     
+    
 }
 .servicios3{
     display: flex;
     flex-direction: row;
     justify-content: center;
-   
+    margin-bottom: 2rem;
+  
+ 
+
+}
+@media (max-width:500px){
+    .servicios3{
+        flex-direction: column;
+    
+    }
 }
 .enlace2 img{
    width: 45px;
+   background-image: linear-gradient(white, var(--primary));
+  
+   border-radius: 35%;
+   height: 7rem;
+   width: 7rem;
+   padding: 1rem;
+  
 }
 .servicios2{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    
 
+}
+@media (max-width:500px){
+    .servicios2{
+        flex-direction: column;
+    }
+}
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom:2rem;
+
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  
+    
+}
+.enlace2 a{
+    text-decoration: none;
+ 
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 3rem;
+
+    
 
 }
 
+.contenedor h2{
+    
+    text-align: center;
+
+    padding: 15px 0;
+    
+}
+main{
+    background-image: linear-gradient(white, var(--primary));
+}
+.carousel-item img{
+    display: flex;
+    width: 100%;
+   max-width: 450px;
+   height: 450px;
+   justify-content: center;
+
+
+}
+.carrusel{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    text-align: center;
+    font-size:1rem;
+
+    
+}
+.contactanos h2{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(100, 33, 113);
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+
+}
+.container3{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #CA91FB;
+    border-radius: 1rem;
+    margin: 3rem;
+
+   
+   
+    
+}
+.enlace3{
+    display: flex;
+    margin:2rem 0;
+    font-size:1rem;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+   
+
+
+}
+.formu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+
+    }
+    footer span{
+        font-size: 1rem;
+        
+    
+    }
+    footer{
+        text-align: center;
+        margin: 1rem;
+        background-image: linear-gradient(white, var(--primary));
+    }
+
+ 

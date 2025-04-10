@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
+    
         <!-- barra de navegacion -->
         <nav class="barra-de-navegacion">
             <img src="../pastryker/img/logo1.png" alt="">
             <div class="navegacion">
-                <a class="enlace" href="#">Inicio</a>
-                <a class="enlace" href="#">Nosotros</a>
-                <a class="enlace" href="#">Decoraciones</a>
-                <a class="enlace" href="#">Contacto</a>
+                <a class="enlace" href="#Inicio">Inicio</a>
+                <a class="enlace" href="#Servicios">Servicios</a>
+                <a class="enlace" href="#Galeria">Galeria</a>
+                <a class="enlace" href="#Contacto">Contacto</a>
             </div>
        </nav>
-            <section class="container">
+            <section id="Inicio" class="container">
                <div>
                  <h1>PastryKer</h1>
                  <p>Diseñamos momentos inolvidables</p>
@@ -33,22 +36,23 @@
    
             </section>
     </header>  
+    <!-- servicios que ofrecemos -->
     <main>
-        <section class="contenedor">
+        <section id="Servicios" class="contenedor">
             <h2>¿Que servicios ofrecemos?</h2>
             <div class="servicios">
                 <div class="servicios3">
                     <div class="enlace2">
 
-                        <img src="img/tarta.png" alt="">
+                        <img class="img1" src="img/tarta.png" alt="">
                        <a href="#">Cumpleaños</a>
                     </div>
                     <div class="enlace2">
-                        <img src="img/3globos.png" alt="">
+                        <img class="img1" src="img/3globos.png" alt="">
                        <a href="#">Fiestas Tematicas</a>
                     </div>
                     <div class="enlace2">
-                        <img src="img/baby-solid.svg" alt="">
+                        <img class="img1" src="img/baby-solid.svg" alt="">
                        <a href="#">Revelacion de sexo</a>
                     </div>
                 </div>
@@ -58,15 +62,15 @@
                 <div class="servicios2">
 
                     <div class="enlace2">
-                        <img src="img/cake-cup-color-icon.png" alt="">
+                        <img class="img1" src="img/cake-cup-color-icon.png" alt="">
                        <a href="#">Mesas Tartas Dulces</a>
                     </div>
                     <div class="enlace2">
-                        <img src="img/love-icon.png" alt="">
+                        <img class="img1" src="img/love-icon.png" alt="">
                        <a href="#">San Valentin</a>
                     </div>
                     <div class="enlace2">
-                        <img src="img/carritos.png" alt="">
+                        <img class="img1" src="img/carritos.png" alt="">
                        <a href="#">Carritos de Snack</a>
                     </div>
 
@@ -74,13 +78,53 @@
 
     
             </div>
+            <div id="Galeria">
+                <H3> Galeria</H3>
+            </div>
+            
+            <!-- carrusel -->
+             <div class="carrusel">
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img cla src="img/abna.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/decoracion.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/decoracion anima.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/oso2.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/tarta dulce.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+             </div>
+
+
+
+
+             <!-- Formulario -->
 
         </section>
-        <section class="container3">
+        <section id="Contacto" class="container3">
             <div class="contactanos">
                 <h2>Contactanos <span>creamos sonrrisas</span></h2>
             </div>
-            <form action="formu">
+            <form class="formu">
                 <input class="enlace3" type="text" placeholder="Nombre">
                 <input class="enlace3" type="email" placeholder="email">
                 <input class="enlace3" type="Mensaje" placeholder="Mensaje">
@@ -94,5 +138,8 @@
 
 
     </main>
+    <footer>
+      <p><span>©</span>Ketty Alava</p>
+  </footer>
 </body>
 </html>
